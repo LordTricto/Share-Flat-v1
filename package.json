@@ -1,0 +1,95 @@
+{
+	"name": "share-flat-v1",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@reduxjs/toolkit": "^1.9.1",
+		"@testing-library/jest-dom": "^5.16.5",
+		"@testing-library/react": "^13.4.0",
+		"@testing-library/user-event": "^13.5.0",
+		"axios": "^1.2.3",
+		"chart.js": "^3.6.2",
+		"chartjs-adapter-date-fns": "^3.0.0",
+		"dompurify": "^2.4.3",
+		"eslint-plugin-prettier": "^4.2.1",
+		"formik": "^2.2.9",
+		"js-cookie": "^3.0.1",
+		"moment": "^2.29.4",
+		"react": "^18.2.0",
+		"react-chartjs-2": "^5.2.0",
+		"react-copy-to-clipboard": "^5.1.0",
+		"react-date-range": "^1.4.0",
+		"react-dom": "^18.2.0",
+		"react-idle-timer": "^4.6.4",
+		"react-loader-spinner": "^5.3.4",
+		"react-otp-input": "^2.4.0",
+		"react-redux": "^8.0.5",
+		"react-ripples": "^2.2.1",
+		"react-router-dom": "^6.7.0",
+		"react-scripts": "5.0.1",
+		"react-tooltip": "^4.2.21",
+		"react-topbar-progress-indicator": "^4.1.1",
+		"redux-persist": "^6.0.0",
+		"socket.io-client": "^4.5.4",
+		"web-vitals": "^2.1.4",
+		"yup": "^0.32.11",
+		"yup-password": "^0.2.2",
+		"yup-phone": "^1.3.2"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"force-start": "TSC_COMPILE_ON_ERROR=true TSX_COMPILE_ON_ERROR=true ESLINT_NO_DEV_ERRORS=true DISABLE_ESLINT_PLUGIN=true SKIP_PREFLIGHT_CHECK=true react-scripts start",
+		"force-build": "TSC_COMPILE_ON_ERROR=true TSX_COMPILE_ON_ERROR=true ESLINT_NO_DEV_ERRORS=true DISABLE_ESLINT_PLUGIN=true SKIP_PREFLIGHT_CHECK=true react-scripts build",
+		"format": "prettier-eslint --eslint-config-path ./.eslintrc.js --write '**/*.js'",
+		"lint": "eslint . --ext .js",
+		"check-types": "tsc --pretty --noEmit",
+		"check-format": "prettier --check .",
+		"check-lint": "eslint . --ext ts --ext tsx --ext js",
+		"format-code": "prettier --write .",
+		"test-all": "yarn check-format && yarn check-lint && yarn check-types && yarn build",
+		"prepare": "husky install"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@types/chart.js": "^2.9.37",
+		"@types/dompurify": "^2.4.0",
+		"@types/jest": "^29.2.6",
+		"@types/js-cookie": "^3.0.2",
+		"@types/node": "^18.11.18",
+		"@types/react": "^17.0.43",
+		"@types/react-copy-to-clipboard": "^5.0.4",
+		"@types/react-date-range": "^1.4.4",
+		"@types/react-dom": "^18.0.10",
+		"eslint-config-prettier": "^8.6.0",
+		"husky": "^8.0.3",
+		"prettier": "^2.8.3",
+		"prettier-eslint": "^15.0.1",
+		"prettier-eslint-cli": "^7.1.0",
+		"tailwindcss": "^3.2.4",
+		"typescript": "^4.9.4"
+	},
+	"resolutions": {
+		"@types/react": "17.0.2",
+		"@types/react-dom": "17.0.2"
+	}
+}

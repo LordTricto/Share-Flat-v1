@@ -1,0 +1,20 @@
+# don't ever lint node_modules
+node_modules
+
+# don't lint build output (make sure it's set to your correct build folder name)
+build
+
+# don't lint nyc coverage output
+coverage
+
+.vscode
+
+.eslintrc.js
+
+.babel.config.js
+
+craco.config.js
+
+tailwind.config.js
+
+tsconfig.json
